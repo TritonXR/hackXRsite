@@ -1,5 +1,4 @@
-h1
-{
+h1 {
   font-family: "Arial";
 }
 .container {
@@ -12,5 +11,9 @@ h1
     text-align: center;
 }
 .xr-event-description {
-  color: #00ffff;
+  color: #7fffd4;
+}
+#logo {
+  height: 260px;
+  width: 420px;
 }
