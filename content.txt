@@ -1,5 +1,5 @@
 Title: Hack XR
-Place: UC San Diego Computer Science Building 
+Place: UC San Diego Computer Science Building
 Dates: Feb 23-25
 
 Signup form coming soon
@@ -40,5 +40,4 @@ Mixed Reality is a process where real camera footage of a person playing a VR ga
 
 VR Club Logo on bottom
 
-Add links to Devpost, Slack and place for registration. 
-
+Add links to Devpost, Slack and place for registration.
