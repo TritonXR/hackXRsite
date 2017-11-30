@@ -1,6 +1,9 @@
 h1 {
   font-family: "Arial";
 }
+p {
+  display: block;
+}
 .container {
     padding-right: 15px;
     padding-left: 15px;
