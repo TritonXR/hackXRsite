@@ -1,9 +1,6 @@
 h1 {
   font-family: "Arial";
 }
-p {
-  display: block;
-}
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -15,6 +12,20 @@ p {
 }
 .xr-event-description {
   color: #7fffd4;
+}
+.col {
+  width: 33.3333%;
+  display: inline-block;
+}
+.faq-format {
+  width: 66.66666667%;
+  margin-left: 16.6666667%;
+}
+.faq-question {
+  font-size: 24px;
+}
+.faq-answer {
+  font-size: 20px;
 }
 #logo {
   height: 260px;
