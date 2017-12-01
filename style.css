@@ -6,6 +6,7 @@ h1 {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    color: #000000;
 }
 .text-center {
     text-align: center;
@@ -23,9 +24,29 @@ h1 {
 }
 .faq-question {
   font-size: 24px;
+  font-weight: bold;
 }
 .faq-answer {
   font-size: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-envelope {
+  background: #dc143c;
+  color: white;
 }
 #logo {
   height: 260px;
