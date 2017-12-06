@@ -1,36 +1,102 @@
-h1 {
-  font-family: "Arial";
+h1, h2, p, body {
+    margin: 0;
+    font-family: 'Open-Sans', "Arial";
 }
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    color: #000000;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000000;
+}
+.container-format-1 {
+  background: linear-gradient(#549cbe, #649fed);
+  padding-top: 160px;
+}
+.container-format-2 {
+  /*background: linear-gradient(#649fed, #f5deb3);*/
+  background: #649fed;
+  padding-top: 350px;
+}
+.container-format-3 {
+  /*background: linear-gradient(#f5deb3, #d2b48c);*/
+  background: linear-gradient(#649fed, #f5deb3);
+}
+.container-format-4 {
+  background: linear-gradient(#f5deb3, #d2b48c);
+  padding-top: 40px;
+  padding-right: 1300px;
 }
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 .xr-event-description {
-  color: #7fffd4;
+  color: #fff5ee;
+  font-size: 24px;
+}
+.sign-up-button {
+  padding-top: 20px;
+}
+.schedule {
+  width: 100%;
+  /*border: 1px solid blue;*/
+  text-align: center;
+}
+.schedule-day {
+  display: inline-block;
+  /*border: 1px solid green;*/
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f8ff;
+  color: #000000;
+  border-radius: 12px;
+  border: 2px solid #ffa07a;
+}
+.schedule-col {
+  display: inline-block;
+  /*border: 1px solid red;*/
+  margin: 2px;
+  font-size: 18px;
+  /*font-weight: bold;*/
+  color: #000000;
+}
+.schedule-event {
+  margin-right: 10px;
+}
+.schedule-time {
+  margin-left: 10px;
 }
 .col {
-  width: 33.3333%;
   display: inline-block;
+  /*border: 1px solid red;*/
+  margin: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff5ee;
+  width: 80%;
 }
 .faq-format {
-  width: 66.66666667%;
-  margin-left: 16.6666667%;
+  width: 100%;
+  /*border: 1px solid blue;*/
+  text-align: center;
 }
 .faq-question {
   font-size: 24px;
   font-weight: bold;
+  color: inherit;
 }
 .faq-answer {
   font-size: 20px;
+  color: inherit;
 }
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
   width: 20px;
   text-align: center;
@@ -51,4 +117,45 @@ h1 {
 #logo {
   height: 260px;
   width: 420px;
+}
+
+#sign-up {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ffa07a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-weight: bold;
+}
+#sign-up:hover {background-color: #ff7f50}
+#schedule {
+  font-size: 34px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+#faq {
+  font-size: 34px;
+  color: #fff;
+  padding-top: 40px;
+}
+#day {
+  padding-bottom: 10px;
+}
+#box {
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 60em;
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  z-index: -1;
 }
