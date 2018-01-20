@@ -3,6 +3,19 @@ h1, h2, p, body {
     font-family: 'Open-Sans', "Arial";
     color: rgba(95,107,128,1.0);
 }
+h2 {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+h3 {
+  text-align: center;
+  font-size: 1rem;
+}
+h4 {
+  text-align: center;
+  font-size: 1rem;
+}
 
 /* COLORS */
 /* rgba(128,182,133,1.0) GREEN */
@@ -16,24 +29,28 @@ h1, h2, p, body {
   margin-left: auto;
   color: #000000;
 }
-.container-format-1 {
+
+.row.section {
+  padding-top: 150px;
+}
+/*.container-format-1 {
   background: linear-gradient(#549cbe, #649fed);
   padding-top: 160px;
 }
 .container-format-2 {
-  /*background: linear-gradient(#649fed, #f5deb3);*/
+  background: linear-gradient(#649fed, #f5deb3);
   background: #649fed;
   padding-top: 350px;
 }
 .container-format-3 {
-  /*background: linear-gradient(#f5deb3, #d2b48c);*/
+  background: linear-gradient(#f5deb3, #d2b48c);
   background: linear-gradient(#649fed, #f5deb3);
 }
 .container-format-4 {
   background: linear-gradient(#f5deb3, #d2b48c);
   padding-top: 40px;
-  /*padding-right: 1300px;*/
-}
+  padding-right: 1300px;
+}*/
 .text-center {
   text-align: center;
 }
@@ -55,30 +72,56 @@ h1, h2, p, body {
   /*border: 1px solid blue;*/
   text-align: center;
 }
-.schedule-day {
-  display: inline-block;
-  /*border: 1px solid green;*/
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.schedule_element {
+  justify-content: space-between;
+  align-content: center;
+  display: flex;
+  padding: 3px 0px;
+}
+.schedule_event {
+  text-align: left;
+}
+
+.schedule_time {
+  text-align: right;
+}
+
+.card_container {
+  display: block !important;
+}
+.card_content {
   padding: 10px;
-  margin: 10px;
+}
+.card {
+  display: inline-block;
   background-color: #f0f8ff;
   color: #000000;
   border-radius: 0.5rem;
   border: 2px solid rgba(128,182,133,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
+  margin-bottom: 2rem;
 }
-.schedule-col {
-  display: inline-block;
-  /*border: 1px solid red;*/
-  margin: 2px;
-  font-size: 18px;
-  /*font-weight: bold;*/
-  color: #000000;
+
+.faq .card {
+  width: 100%;
 }
+.col {
+  padding: 0px 1rem !important;
+}
+
 .schedule-event {
   margin-right: 10px;
 }
 .schedule-time {
   margin-left: 10px;
 }
+
 .faq-format {
   width: 100%;
   /*border: 1px solid blue;*/
@@ -88,9 +131,11 @@ h1, h2, p, body {
   font-size: 24px;
   font-weight: bold;
   color: inherit;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 .faq-answer {
-  font-size: 20px;
+  font-size: 16px;
   color: inherit;
 }
 .fa {
@@ -113,7 +158,7 @@ h1, h2, p, body {
   color: white;
 }
 
-/*LANDING SECTION*/
+/* ////////// LANDING SECTION ////////// */
 
 .landing {
   height: 700px;
@@ -134,6 +179,7 @@ h1, h2, p, body {
   left: 0px;
   width: 100%;
 }
+
 /*.svg.arrow {
   left: 0px;
   z-index: 9;
@@ -150,7 +196,7 @@ h1, h2, p, body {
   z-index: 9;
 }*/
 
-/* NAVBAR */
+/* ////////// NAVBAR ////////// */
 
 .navbar{
   position: sticky;

@@ -1,10 +1,11 @@
 window.onload = function{
 	//animate the logo when the page begins
+  $('.vrquest').hide();
 };
 
-document.getElementById('sign-up').onclick(function {
-  
-});
+$('.vrcard').click( function {
+  $('.vrquest').show();
+};
 
 //SMOOTH SCROLLING FUNCTION
 var smoothScrollProgress = true;
