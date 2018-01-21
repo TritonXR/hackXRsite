@@ -1,20 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:400,600%7CAlegreya+Sans+SC:400,700%7CAntic%7CDosis:400,600%7CHind+Siliguri:400,600%7CIstok+Web%7CJulius+Sans+One%7CMallanna%7CMeera+Inimai%7CMukta+Malar:400,600%7CNews+Cycle%7CNunito:400,600%7CRaleway:400,600%7CSeymour+One%7CSyncopate');
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/oaBFj7Fz9Y9_eW3k9Jd9X6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind Siliguri SemiBold'), local('HindSiliguri-SemiBold'), url(https://fonts.gstatic.com/s/hindsiliguri/v4/fBpmjMpv5Rh6S25yVfWJn2KfMIkbG8AbRwbbZe_KZt0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+} /* Winner Winner */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v12/xkvoNo9fC8O2RDydKj12bwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/6TbRXKWJjpj6V2v_WyRbMevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 h1, h2, p, body {
     margin: 0;
     font-family: 'Open-Sans', "Arial";
     color: rgba(95,107,128,1.0);
 }
+h1 {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-family: 'Nunito';
+}
+button h1 {
+  color: white;
+  padding: 0px;
+}
 h2 {
   text-align: center;
-  padding: 1rem 2rem;
-  font-size: 2rem;
+  padding: 2rem 2rem;
+  font-size: 3rem;
+  font-family: 'Nunito';
+  font-weight: 400;
 }
 h3 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Dosis';
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
-h4 {
+.card h3 {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted rgba(95,107,128,0.4);
+}
+h4, a {
   text-align: center;
   font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+h4, span, p, a{
+  font-family: 'Hind Siliguri';
+}
+
+a {
+  text-align: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
 }
 
 /* COLORS */
@@ -31,26 +108,14 @@ h4 {
 }
 
 .row.section {
-  padding-top: 150px;
+  margin-top: 100px;
+  padding-top: 50px;
 }
-/*.container-format-1 {
-  background: linear-gradient(#549cbe, #649fed);
-  padding-top: 160px;
+
+.body_content {
+  background: linear-gradient(rgba(128,182,133,0.2), rgba(95,107,128,0.2));
 }
-.container-format-2 {
-  background: linear-gradient(#649fed, #f5deb3);
-  background: #649fed;
-  padding-top: 350px;
-}
-.container-format-3 {
-  background: linear-gradient(#f5deb3, #d2b48c);
-  background: linear-gradient(#649fed, #f5deb3);
-}
-.container-format-4 {
-  background: linear-gradient(#f5deb3, #d2b48c);
-  padding-top: 40px;
-  padding-right: 1300px;
-}*/
+
 .text-center {
   text-align: center;
 }
@@ -103,14 +168,12 @@ h4 {
   background-color: #f0f8ff;
   color: #000000;
   border-radius: 0.5rem;
-  border: 2px solid rgba(128,182,133,1.0);
+  /*border: 2px solid rgba(128,182,133,1.0);*/
   box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
   margin-bottom: 2rem;
-}
-
-.faq .card {
   width: 100%;
 }
+
 .col {
   padding: 0px 1rem !important;
 }
@@ -138,37 +201,27 @@ h4 {
   font-size: 16px;
   color: inherit;
 }
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-envelope {
-  background: #dc143c;
-  color: white;
-}
 
 /* ////////// LANDING SECTION ////////// */
 
 .landing {
-  height: 700px;
-  padding: 40px 0px;
+  max-height: 700px;
+  padding: 20px 0px;
+  padding-bottom: 150px;
+  margin-bottom: 0px;
+  background: linear-gradient(rgba(128,182,133,0.1), rgba(128,182,133,0.15));
+}
+.landing .row {
+  margin: 0px;
+  padding: 0px;
+}
+.logo .col {
+  padding: 0px !important;
 }
 
 .container.logo {
-  height: 400px;
-  width: 900px;
-  overflow: hidden;
+  height: 420px;
+  width: auto;
 }
 .svg {
   height: 60%;
@@ -179,16 +232,24 @@ h4 {
   left: 0px;
   width: 100%;
 }
+.logo .col {
+  height: 405px;
+}
+
+.presented_by {
+  width: 60%;
+  position: relative;
+  left: 0px;
+}
 
 /*.svg.arrow {
   left: 0px;
   z-index: 9;
 }
-.svg.logo {
-  /*left: 0px;
+.svg.xr {
   display: block;
   margin: auto;
-  /*text-align: center;
+  text-align: center;
   z-index: 10;
 }
 .svg.block{
@@ -201,59 +262,84 @@ h4 {
 .navbar{
   position: sticky;
   top: 0px;
-  height: 60px;
+  height: auto;
   background-color: rgba(125,137,158,1.0);
   color: white;
+}
+.navbar h4 {
+  margin: 0px;
 }
 
 .navlink {
   height: 50px;
-  margin: 3px 0px;
   cursor: pointer;
-  /*border-bottom: 0px solid rgba(75,87,108,1.0);*/
+  padding: 10px 30px 0px 30px !important;
+  margin-left: 30px;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   background-color: rgba(125,137,158,0.0);
+  text-align: center;
+}
+.nav_container {
+  display: block;
+  border-bottom: 2px solid rgba(125,137,158,0);
+}
+.effect {
+  position: relative;
+  right: 0px;
+  width: 0%;
+  border-bottom: 2px solid white;
+  margin-left: auto;
+  transition: all 2s;
+  -webkit-transition: all 0.5s;
+}
+.navlink:hover .effect {
+  width: 100%;
 }
 
-.navlink:hover {
-  background-color: rgba(75,87,108,1.0);
-  /*border-bottom: 2px solid rgba(125,137,158,1.0);*/
-}
-
-
-#sign-up {
+#register, #facebook {
   width: 100%;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 10px 25px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: rgba(128,182,133,1.0);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgba(98,152,103,1.0);
   font-weight: bold;
+  box-shadow: 0px 0px 15px rgba(95,107,128,0);
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
-#sign-up:hover {
-  background-color: rgba(137,192,143,1.0);
+
+#register {
+  background-color: rgba(95,107,128,1.0);
+}
+#register:hover {
+  background-color: rgba(75,87,108,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
 }
 
-#schedule {
-  font-size: 34px;
-  color: #fff;
-  padding-bottom: 20px;
+#facebook {
+  background-color: rgba(128,182,133,1.0);
 }
-#faq {
-  font-size: 34px;
-  color: rgba(95,107,128,1.0);
-  padding-top: 40px;
+#facebook:hover {
+  background-color: rgba(108,162,113,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
 }
+
+.link {
+  text-decoration: underline;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.link:hover {
+  color: rgba(128,182,133,1.0);
+}
+
 #day {
   padding-bottom: 10px;
 }
@@ -267,4 +353,24 @@ h4 {
   height: 40px;
   border-radius: 5px;
   z-index: -1;
+}
+
+/* ////////// FOOTER ////////// */
+
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: rgba(95,107,128,1.0);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 4rem;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
 }

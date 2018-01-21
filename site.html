@@ -15,128 +15,110 @@
 
 <!-- LANDING SECTION -->
 
-  <div class="landing">
-      <div class="row container logo">
-        <object class="svg all" type="image/svg+xml" data="public/img/svg/XR_logo_all.svg">Your browser does not support SVGs</object>
+  <div class="landing" id="landing">
+    <div class="row present">
+      <object class="svg presented_by" type="image/svg+xml" data="public/img/svg/XR_presentedby.svg">Your browser does not support SVGs</object>
+    </div>
+    <div class="row container logo">
+      <!-- <div class="col m2">
+        <object class="svg arrow" type="image/svg+xml" data="public/img/svg/XR_arrow.svg">Your browser does not support SVGs</object>
       </div>
-      <div class="row text-center">
-        <div class="col s12 m10 offset-m1">
-          <div class = "xr-event-description">
-            <h2>UC San Diego Computer Science Building</h2>
-            <h2>Feb 23-25, 2017</h2>
-          </div>
-          <div class="col s12 m4 offset-m4">
-            <div class="sign-up-button">
-              <button id="sign-up">Sign Up</button>
-            </div>
-          </div>
-        </div>
+      <div class="col s12 m8">
+        <object class="svg xr" type="image/svg+xml" data="public/img/svg/XR_logo.svg">Your browser does not support SVGs</object>
       </div>
-  </div>
-
-<!-- NAVBAR -->
-
-  <div class="navbar">
-    <div class="row">
+      <div class="col m2">
+        <object class="svg block" type="image/svg+xml" data="public/img/svg/XR_block.svg">Your browser does not support SVGs</object>
+      </div> -->
+      <object class="svg all" type="image/svg+xml" data="public/img/svg/XR_logo_all.svg">Your browser does not support SVGs</object>
+    </div>
+    <div class="row text-center">
       <div class="col s12 m10 offset-m1">
-        <div class="col s4">
-          <h4>HackXR</h4>
+        <div class = "xr-event-description">
+          <h1>UCSD's First Ever VR / AR Hackathon</h1>
+          <h1>Feb 23-25, 2018 | Computer Science Building</h1>
         </div>
-        <div class="col s2 navlink"><h4>XR?</h4></div>
-        <div class="col s2 navlink"><h4>SIGNUP</h4></div>
-        <div class="col s2 navlink"><h4>SCHEDULE</h4></div>
-        <div class="col s2 navlink"><h4>SPONSOR</h4></div>
+        <div class="col s12 m6 l4 offset-l2">
+          <div class="sign-up-button">
+            <button id="register"><a target="_blank" href="https://hackxr.typeform.com/to/JNmhgg"><h1>Register</h1></a></button>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="sign-up-button">
+            <button id="facebook"><a target="_blank" href="https://www.facebook.com/events/179810302622885/"><h1>Facebook Event</h1></a></button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-<!-- CONTENT -->
+<!-- NAVBAR -->
 
-  <div class="row section schedule">
-    <div class="col s12 m10 offset-m1">
-      <h2 id="title">Schedule</h2>
+  <div class="body_content">
 
-      <div class="col s12 m4">
-        <div class="card_container">
-          <div class="card">
-            <div class="card_content">
-              <h2 id="day">Friday, February 23rd</h2>
-              <ul class="list">
-                <li class="schedule_element">
-                  <span class="schedule_event">Check in + Dinner</span>
-                  <span class="schedule_time">7:00 PM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">VR Design Workshop</span>
-                  <span class="schedule_time">9:00-9:30 PM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">Pitchfest</span>
-                  <span class="schedule_time">9:30-10:00 PM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">Start Hacking</span>
-                  <span class="schedule_time">10:00 PM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">Unity Workshop</span>
-                  <span class="schedule_time">10:00-12:00 PM</span>
-                </li>
-              </ul>
+    <div class="navbar">
+      <div class="row">
+        <div class="col s12 m10 offset-m1">
+          <div class="col m4 navlink">
+            <a href="#landing"><h4 class="text-left">HackXR</h4></a>
+          </div>
+          <div class="col m2 navlink">
+            <div class="nav_container">
+              <h4 class="text-right"></h4>
+            </div>
+          </div>
+          <div class="col m2 navlink">
+            <div class="nav_container">
+              <a href="#schedule"><h4 class="text-right">Schedule</h4></a>
+              <div class="effect"></div>
+            </div>
+          </div>
+          <div class="col m2 navlink">
+            <div class="nav_container">
+              <a href="#faq"><h4 class="text-right">FAQ</h4></a>
+              <div class="effect"></div>
+            </div>
+          </div>
+          <div class="col m2 navlink">
+            <div class="nav_container">
+              <h4 class="text-right"><a href="#sponsor">Sponsor</a></h4>
+              <div class="effect"></div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col s12 m4">
-        <div class="card_container">
-          <div class="card">
-            <div class="card_content">
-              <h2 id="day">Saturday, February 24th</h2>
-              <ul class="list">
-                <li class="schedule_element">
-                  <span class="schedule_event">Breakfast</span>
-                  <span class="schedule_time">9:00 AM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">Lunch</span>
-                  <span class="schedule_time">1:00 PM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">How to Pitch your Project Workshop</span>
-                  <span class="schedule_time">6:00-7:00 PM</span>
-                </li>
-                <li class="schedule_element">
-                  <span class="schedule_event">Dinner</span>
-                  <span class="schedule_time">7:00 PM</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- CONTENT -->
 
-        <div class="col s12 m4">
+    <div class="row section schedule" id="schedule">
+      <div class="col s12 m10 offset-m1">
+        <h2 id="title">Schedule</h2>
+
+        <div class="col s12 l4">
           <div class="card_container">
             <div class="card">
               <div class="card_content">
-                <h2 id="day">Sunday, February 25th</h2>
+                <h3 id="day">Friday, February 23rd</h3>
                 <ul class="list">
                   <li class="schedule_element">
-                    <span class="schedule_event">Breakfast</span>
-                    <span class="schedule_time">8:00 AM</span>
+                    <span class="schedule_event">Check in + Dinner</span>
+                    <span class="schedule_time">7:00 PM</span>
                   </li>
                   <li class="schedule_element">
-                    <span class="schedule_event">Stop Hacking</span>
-                    <span class="schedule_time">10:00 AM</span>
+                    <span class="schedule_event">VR Design Workshop</span>
+                    <span class="schedule_time">9:00-9:30 PM</span>
                   </li>
                   <li class="schedule_element">
-                    <span class="schedule_event">Showcase + Judging</span>
-                    <span class="schedule_time">10:00 AM-12:00 PM</span>
+                    <span class="schedule_event">Pitchfest</span>
+                    <span class="schedule_time">9:30-10:00 PM</span>
                   </li>
                   <li class="schedule_element">
-                    <span class="schedule_event">Award Ceremony</span>
-                    <span class="schedule_time">12:00-1:00 PM</span>
+                    <span class="schedule_event">Start Hacking</span>
+                    <span class="schedule_time">10:00 PM</span>
+                  </li>
+                  <li class="schedule_element">
+                    <span class="schedule_event">Unity Workshop</span>
+                    <span class="schedule_time">10:00-12:00 PM</span>
                   </li>
                 </ul>
               </div>
@@ -144,83 +126,155 @@
           </div>
         </div>
 
-      </div>
-    </div>
-
-    <div class="row section faq">
-      <div class = "col s12 m10 offset-m1">
-        <h2 id="title">FAQ</h2>
-
-        <div class="col s12 m6">
+        <div class="col s12 l4">
           <div class="card_container">
             <div class="card">
               <div class="card_content">
-                <h4 class="faq-question">What is a hackathon?</h4>
-                <p class="faq-answer">
-                  No Idea
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">
-            <div class="card">
-              <div class="card_content">
-               <h4 class="faq-question">What is VR?</h4>
-                <p class="faq-answer">
-                  Virtual Reality applications place the user in a virtual world where
-                  they are not able to see the real world. At the bare minimum, their head
-                  rotations change their point of view. Higher end devices have spatial
-                  tracking, allowing movement and 6 DOF controllers allowing for natural
-                  interaction. Great for interactive experiences!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card_container">
-            <div class="card">
-              <div class="card_content">
-                <h4 class="faq-question">What is MR?</h4>
-                  <p class="faq-answer">
-                  Mixed Reality is a process where real camera footage of a person
-                  playing a VR game is overlaid with the game visuals, giving a third
-                  person perspective of the game. See this
-                  <a href="https://www.youtube.com/watch?v=nx-esx_KbJE" target="_blank">video</a>
-                  for an example!
-                </p>
+                <h3 id="day">Saturday, February 24th</h3>
+                <ul class="list">
+                  <li class="schedule_element">
+                    <span class="schedule_event">Breakfast</span>
+                    <span class="schedule_time">9:00 AM</span>
+                  </li>
+                  <li class="schedule_element">
+                    <span class="schedule_event">Lunch</span>
+                    <span class="schedule_time">1:00 PM</span>
+                  </li>
+                  <li class="schedule_element">
+                    <span class="schedule_event">How to Pitch your Project Workshop</span>
+                    <span class="schedule_time">6:00-7:00 PM</span>
+                  </li>
+                  <li class="schedule_element">
+                    <span class="schedule_event">Dinner</span>
+                    <span class="schedule_time">7:00 PM</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col s12 m6">
-          <div class="card_container">
-            <div class="card">
-              <div class="card_content">
-                <h4 class="faq-question">Why hack?</h4>
-                <p class="faq-answer">It's fun</p>
+
+          <div class="col s12 l4">
+            <div class="card_container">
+              <div class="card">
+                <div class="card_content">
+                  <h3 id="day">Sunday, February 25th</h3>
+                  <ul class="list">
+                    <li class="schedule_element">
+                      <span class="schedule_event">Breakfast</span>
+                      <span class="schedule_time">8:00 AM</span>
+                    </li>
+                    <li class="schedule_element">
+                      <span class="schedule_event">Stop Hacking</span>
+                      <span class="schedule_time">10:00 AM</span>
+                    </li>
+                    <li class="schedule_element">
+                      <span class="schedule_event">Showcase + Judging</span>
+                      <span class="schedule_time">10:00 AM-12:00 PM</span>
+                    </li>
+                    <li class="schedule_element">
+                      <span class="schedule_event">Award Ceremony</span>
+                      <span class="schedule_time">12:00-1:00 PM</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card_container">
-            <div class="card">
-              <div class="card_content">
-                <h4 class="faq-question">What is AR?</h4>
+
+        </div>
+      </div>
+
+      <div class="row section faq" id="faq">
+        <div class = "col s12 m10 offset-m1">
+          <h2 id="title">FAQ</h2>
+
+          <div class="col s12 m6">
+            <div class="card_container">
+              <div class="card">
+                <div class="card_content">
+                  <h3>What is a hackathon?</h3>
                   <p class="faq-answer">
-                    Augmented Reality applications overlay computer graphics on the real
-                  world. Has a lot of potential for practical applications!
+                    No Idea
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">
+              <div class="card">
+                <div class="card_content">
+                 <h3>What is VR?</h3>
+                  <p class="faq-answer">
+                    Virtual Reality applications place the user in a virtual world where
+                    they are not able to see the real world. At the bare minimum, their head
+                    rotations change their point of view. Higher end devices have spatial
+                    tracking, allowing movement and 6 DOF controllers allowing for natural
+                    interaction. Great for interactive experiences!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">
+              <div class="card">
+                <div class="card_content">
+                  <h3>What is MR?</h3>
+                    <p class="faq-answer">
+                    Mixed Reality is a process where real camera footage of a person
+                    playing a VR game is overlaid with the game visuals, giving a third
+                    person perspective of the game. See this
+                    <a href="https://www.youtube.com/watch?v=nx-esx_KbJE" target="_blank">video</a>
+                    for an example!
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col s12 m6">
+            <div class="card_container">
+              <div class="card">
+                <div class="card_content">
+                  <h3>Why hack?</h3>
+                  <p class="faq-answer">It's fun</p>
+                </div>
+              </div>
+            </div>
+            <div class="card_container">
+              <div class="card">
+                <div class="card_content">
+                  <h3>What is AR?</h3>
+                    <p class="faq-answer">
+                      Augmented Reality applications overlay computer graphics on the real
+                    world. Has a lot of potential for practical applications!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-  <div class="row section">
-    <div class="text-center">
-      <a href="https://www.facebook.com/ucsdvr/" class="fa fa-facebook" target="_blank"></a>
-      <a href="mailto:virtualreality@ucsd.edu" class="fa fa-envelope"></a>
+        <div class="row section sponsor" id="sponsor">
+          <div class = "col s12 m10 offset-m1">
+            <h2 id="title">Sponsors</h2>
+            <h3 class="text-center">Become a sponsor. <a class="link" href="mailto:virtualreality@ucsd.edu">Email us</a></h3>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="row section">
+            <div class="col s12 m10 offset-m1">
+              <div class="text-left">
+                <div class="col s1">
+                  <a href="https://www.facebook.com/ucsdvr/" class="fa fa-facebook-square fa-2x" target="_blank"></a>
+                </div>
+                <div class="col s1">
+                  <a href="mailto:virtualreality@ucsd.edu" class="fa fa-envelope fa-2x"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
 
-</body>
+  </body>
 </html>
