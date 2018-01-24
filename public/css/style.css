@@ -44,7 +44,6 @@ h1, h2, p, body {
     margin: 0;
     font-family: 'Open-Sans', "Arial";
     color: rgba(95,107,128,1.0);
-    max-width: 1600px;
 }
 h1 {
   text-align: center;
@@ -95,10 +94,19 @@ a {
   font-family: inherit;
 }
 
+b {
+  font-weight: 900;
+  color: rgba(128,182,133,1.0);
+}
+
 /* COLORS */
 /* rgba(128,182,133,1.0) GREEN */
 /* rgba(95,107,128,1.0) GREY */
 /* rgba(111,139,130,1.0) */
+
+.landing_content, .body_content, .navbar_content, .footer_content {
+  max-width: 1600px;
+}
 
 .container {
   padding-right: 15px;
@@ -113,7 +121,7 @@ a {
   padding-top: 50px;
 }
 
-.body_content {
+.body_container {
   background: linear-gradient(rgba(128,182,133,0.2), rgba(95,107,128,0.2));
 }
 
@@ -125,6 +133,9 @@ a {
 }
 .text-right {
   text-align: right;
+}
+em.italic {
+  font-style: italic;
 }
 .xr-event-description {
   color: #fff5ee;
@@ -246,9 +257,44 @@ a {
   z-index: 10;
 }
 
+#register, #facebook {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0px 0px 15px rgba(95,107,128,0);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+
+#register {
+  background-color: rgba(95,107,128,1.0);
+}
+#register:hover {
+  background-color: rgba(75,87,108,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
+}
+
+#facebook {
+  background-color: rgba(128,182,133,1.0);
+}
+#facebook:hover {
+  background-color: rgba(108,162,113,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
+}
+
 /* ////////// NAVBAR ////////// */
 
 .navbar{
+  width: 100%;
   position: sticky;
   top: 0px;
   height: auto;
@@ -303,7 +349,45 @@ a {
   width: 100%;
 }
 
-#register, #facebook {
+/* ////////// FAQ ////////// */
+
+.link {
+  color: rgba(128,182,133,1.0);
+  text-decoration: underline;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  text-shadow: 0px 0px 5px rgba(95,107,128,0.0);
+}
+.link:hover {
+  color: rgba(158,212,163,1.0);
+  text-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+}
+
+/* ////////// SCHEDULE ////////// */
+
+.disclaimer {
+  opacity: 0.5;
+}
+
+#day {
+  padding-bottom: 10px;
+}
+
+#box {
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 60em;
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+/* ////////// LINKS ////////// */
+
+#devpost, #slack {
   width: 100%;
   display: inline-block;
   padding: 10px 25px;
@@ -320,45 +404,37 @@ a {
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
-
-#register {
+/* Devpost dark-blue rgba(5,62,83,1.0) */
+/* Devpost light-blue rgba(68,204,228,1.0) */
+#devpost {
   background-color: rgba(95,107,128,1.0);
+  border: 2px solid rgba(68,204,228,0);
 }
-#register:hover {
-  background-color: rgba(75,87,108,1.0);
-  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
+#devpost:hover {
+  background-color: rgba(5,62,83,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,1.0)
 }
-
-#facebook {
-  background-color: rgba(128,182,133,1.0);
+/* Slack magenta rgba(203,30,93,1.0) */
+/* Slack orange rgba(224,163,71,1.0) */
+/* Slack blue rgba(116,196,201,1.0) */
+/* Slack green rgba(69,172,134,1.0) */
+#slack {
+  background-color: rgba(95,107,128,1.0);
+  border: 2px solid rgba(203,30,93,0);
 }
-#facebook:hover {
-  background-color: rgba(108,162,113,1.0);
-  box-shadow: 0px 0px 15px rgba(95,107,128,0.5);
-}
-
-.link {
-  text-decoration: underline;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.link:hover {
-  color: rgba(128,182,133,1.0);
+#slack:hover{
+  background-color: rgba(203,30,93,1.0);
+  box-shadow: 0px 0px 15px rgba(95,107,128,1.0)
 }
 
-#day {
-  padding-bottom: 10px;
+/* ////////// SPONSORSHIP ////////// */
+
+.sponsor h3 {
+  margin-bottom: 4rem;
 }
-#box {
-  color: #fff;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  font-size: 60em;
-  font-weight: bold;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  z-index: -1;
+.sponsor img {
+  width: 100%;
+  height: auto;
 }
 
 /* ////////// FOOTER ////////// */
@@ -367,6 +443,11 @@ a {
   height: 150px;
   width: 100%;
   background-color: rgba(95,107,128,1.0);
+}
+
+.footer .row {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .fa {
@@ -381,7 +462,19 @@ a {
   opacity: 0.7;
 }
 
-.vr_logo {
+a.vrlogo {
+ position: relative;
+ display: inline-block;
+ width: 25%;
+}
+a.vrlogo:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+object {
   width: 100%;
-  height: auto;
 }
