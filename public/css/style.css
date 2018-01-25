@@ -463,8 +463,8 @@ em.italic {
 }
 
 a.vrlogo {
- position: relative;
- display: inline-block;
+ position: fixed;
+ display: block;
  width: 25%;
 }
 a.vrlogo:after {
