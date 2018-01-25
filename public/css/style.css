@@ -105,7 +105,8 @@ b {
 /* rgba(111,139,130,1.0) */
 
 .landing_content, .body_content, .navbar_content, .footer_content {
-  max-width: 1600px;
+  max-width: 1400px;
+  margin: 0px auto;
 }
 
 .container {
