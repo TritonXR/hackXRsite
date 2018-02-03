@@ -438,6 +438,10 @@ em.italic {
   height: auto;
 }
 
+.sponsorimg {
+  margin: auto;
+}
+
 /* ////////// FOOTER ////////// */
 
 .footer {
