@@ -438,8 +438,8 @@ em.italic {
   height: auto;
 }
 
-.sponsorimg {
-  margin: auto;
+#library {
+  padding-top: 20px;
 }
 
 /* ////////// FOOTER ////////// */
