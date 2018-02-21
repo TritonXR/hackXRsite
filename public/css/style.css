@@ -170,6 +170,18 @@ em.italic {
   text-align: right;
 }
 
+.schedule_element.location {
+  padding-top: 0px;
+}
+.schedule_location {
+  text-align: right;
+  position: relative;
+  left: 10px;
+  top: -5px;
+  padding-top: 0px;
+  color: rgba(95,107,128,0.8);
+}
+
 .card_container {
   display: block !important;
 }
@@ -301,6 +313,7 @@ em.italic {
   height: auto;
   background-color: rgba(125,137,158,1.0);
   color: white;
+  z-index: 100;
 }
 .navbar h4 {
   margin: 0px;
