@@ -479,9 +479,9 @@ em.italic {
   padding-top: 35px;
 }
 #nanome {
-  padding-left: 29%;
+  /*padding-left: 29%;*/
   padding-top: 5%;
-  height: 80%;
+  /*height: 80%;*/
 }
 #htc {
   width: 80%;
@@ -489,7 +489,11 @@ em.italic {
   padding-top: 15%;
 }
 #tesc {
-  height: 80%;
+  /*height: 80%;*/
+  padding-top: 5%;
+}
+
+#pong {
   padding-top: 5%;
 }
 
