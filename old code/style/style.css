@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, main {
+    height: 100%;
+    /* min-height: 100%; */
+}
+
+body {
+    background: linear-gradient(#12171A 0%, #151D37 40%, #24315E 75%, #374785 100%);
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    /* padding: 0 1.5rem; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.logo {
+    max-width: 3rem; 
+    margin-left: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    /* padding-left:30rem; */
+    padding-right: 3rem;
+    justify-content: flex-end;
+    /* display: flex; */
+    /* padding-top:0.5em; */
+}
+li {
+    display: inline-block;
+    margin: 15px auto;
+    text-align: center;
+    padding-left: 2.5rem;
+    /* padding-bottom: 0.85em; */
+}
+
+li a
+{
+    text-decoration: none;
+    /* display: block; */
+    color: white;
+    font-size: 1.4em;
+}
+
+li a:hover {
+    color: gray;
+}
+
+nav {
+    /* display: inline; */
+    position: fixed;
+    width: 100%;
+    height: 3.5rem;
+    display: inline-block;
+    background-color: rgba(6, 7, 8, 0.9);
+    z-index: 99;
+}
+
+section:not(#landing) {
+    /* padding: 10rem 10rem; */
+    /* padding-top: 0rem; */
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+#landing-contents {
+    position: absolute;
+    left: 24rem;
+    top: 16rem;
+    text-align: center;
+}
+
+.landing-buttons {
+    position: absolute;  
+    background-color:  rgba(173, 201, 216, 0.5);
+    border-radius: 0.5em;
+    border: none;
+    text-decoration: none;
+    color: rgb(116, 168, 194);
+    padding: 0.8em 1em;
+}
+
+.landing-buttons:hover {
+    color: grey;
+    background-color:rgb(116, 168, 194); 
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    height: 100%;
+}
+
+p {
+    line-height: 180%;
+    font-size: 1.1rem;
+}
+
+.applyBtn {
+    /* position: */
+    top: 26rem;
+    left: 30rem;
+}
+.fbBtn {
+    /* position: relative; */
+    top: 26rem;
+    left: 50rem;
+}
+
+#about-title {
+    color: rgb(247, 108, 163);
+    font-size: 2em;
+    /* padding-top:2em;
+    margin-top: 0em; */
+}
+
+#schedule-title {
+    color: #374785;
+    font-size: 2em;
+    /* padding-left: 10rem;
+    padding-right: 10rem; */
+    /* align:center; */
+    /* padding-left: 50rem;
+    padding-right: 50rem; */
+    /* text-align: center; */
+    /* padding-top:2em;
+    margin-top: 0em; */
+}
+
+#faq-title {
+    color: #A8D0E6;
+    font-size: 2em;
+}
+
+.flex-grid:nth-child(7) {
+    order: 6;
+    text-align: center;
+    color: pink;
+}
+
