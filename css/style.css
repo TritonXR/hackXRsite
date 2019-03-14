@@ -27,9 +27,9 @@
 }
 
 footer {
-    height: 9rem;
     width: 100%;
     background-color: rgba(95,107,128,1.0);
+    text-align: center;
 }
 
 /* .footer_content {
@@ -90,10 +90,6 @@ footer {
     opacity: 0.7;
 }
 
-object {
-    width: 300%;
-}
-
 .text-heading {
     color: #f76d6d;
 }
@@ -109,12 +105,11 @@ object {
 }
 
 .wide {
-    width: 100%;
+    width: auto;
     height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    margin: 3rem;
+    margin: 3rem 0 0;
+    max-height: 6rem;
+    max-width: 80%;
 }
 
 #sponsors .large {
@@ -135,4 +130,16 @@ object {
 #partners .small {
     width: 20rem;
     max-width: 20rem;
+}
+.xrlogo{
+    height: auto;
+    max-width: 5rem;
+    padding: 1rem;
+    float: right;
+}
+
+@media (max-width:767px){
+    .wide {
+        max-width: 60%;
+    }
 }
