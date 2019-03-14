@@ -2,6 +2,11 @@
     width: 12rem;
 }
 
+.landing_link {
+    color: #a8d1e7;
+    text-decoration: underline;
+}
+
 .schedule-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -98,6 +103,7 @@ footer {
 /* Sponsorships */
 .email-link {
     color: #a8d1e7;
+    text-decoration: underline;
 }
 
 #sponsors .container-fluid {
