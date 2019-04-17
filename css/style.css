@@ -145,11 +145,6 @@ footer {
     float: right;
 }
 
-#ucsd-cse {
-    width: 200%;
-    height: auto;
-}
-
 @media (max-width:767px){
     .wide {
         max-width: 60%;
