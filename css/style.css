@@ -26,6 +26,15 @@
     margin-left: 1rem;
 }
 
+#aorus {
+    max-height: 75% !important;
+    margin-top: 1rem;
+}
+
+#unity {
+    margin-top: 0.6rem;
+}
+
 .btn {
     margin: 0.4rem 2rem;
     width: 13rem;
