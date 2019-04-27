@@ -179,12 +179,14 @@ footer {
     text-align: left;
     float: left;
     padding-left: 20px;
+    color: #24315e;
 }
 
 .event {
     text-align: right;
     float: right;
     padding-right: 20px;
+    color: #24315e;
 }
 
 @media (max-width:767px){
