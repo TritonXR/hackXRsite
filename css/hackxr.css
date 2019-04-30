@@ -88,7 +88,7 @@
   }
 }
 
-.masthead {
+.header {
   position: relative;
   width: 100%;
   height: auto;
@@ -102,7 +102,7 @@
   background-size: cover;
 }
 
-.masthead h1 {
+.header h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -112,29 +112,29 @@
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
+.header h2 {
   max-width: 20rem;
   font-size: 1rem;
 }
 
 @media (min-width: 768px) {
-  .masthead h1 {
+  .header h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  .header {
     height: 100vh;
     padding: 0;
   }
-  .masthead h1 {
+  .header h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
-  .masthead h2 {
+  .header h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
@@ -168,7 +168,7 @@
   background-color: #467370 !important;
 }
 
-.about-section {
+.about-section, .sponsors-section, .partners-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background: -webkit-gradient(#374785);
@@ -176,6 +176,14 @@
 }
 
 .about-section p {
+  margin-bottom: 5rem;
+}
+
+.sponsors-section p {
+  margin-bottom: 5rem;
+}
+
+.partners-section p {
   margin-bottom: 5rem;
 }
 
